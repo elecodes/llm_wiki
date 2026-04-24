@@ -1,43 +1,47 @@
 # Pricing
 
-**Summary**: Current pricing and discounts for tennis programs and summer camps.
+**Summary**: Current pricing, discounts, and availability for tennis programs and summer camps.
 
-**Sources**: [[tennis-kids-lessons-and-summer-camps-san-francisco]], [[question-about-14-year-old-beginners]], [[parent-and-me-classes]]
+**Sources**: [[tennis-kids-lessons-and-summer-camps-san-francisco]], [[question-about-14-year-old-beginners]], [[parent-and-me-classes]], [[sf-tennis-kids-club-spring-season-tennis-lessons-summer-camp]], [[sf-tennis-kids-club-tennis-lessons-for-7-year-olds-at-sfsu-spring-season-other-options]]
 
-**Last updated**: 2026-04-19
+**Last updated**: 2026-04-24
 
 ---
 
-## Current Offers
+## Fees & Discounts
 
-### Summer Camp 2026 — Early Bird
-
-- **Discount**: $100 OFF
-- **Status**: Currently in effect
-- **Note**: Limited availability — register today to secure spot
-
-### Additional Discounts
-
+- **Setup Fee**: $25 one-time fee (applies to all new lesson packages)
+- **Summer Camp Early Bird**: $100 OFF (Limited time)
 - **Sibling Discount**: 5% off second registration and beyond
 - **Multi-Week Savings**: 5% off each additional week (2+ weeks)
 - **Refer-a-Friend**: 10% off (unlimited referrals)
 
-## Lesson Pricing
+## Lesson Pricing & Availability
 
-### Kids Tennis Lessons
+### Private Lessons
 
-- **1-hour lessons** — available for all age groups
-- **Pricing**: Contact for details
-- **Booking**: Book day and time slot online
+- **Rate**: $120 per lesson
+- **Current Availability** (Spring Season):
+    - Tuesdays: 5:00 PM, 6:00 PM
+    - Thursdays: 5:30 PM
 
-### Adult Tennis Lessons
+### Group Lessons
 
-- Available at SFSU location
-- Contact for pricing
+- **Rate**: $56.25 per lesson (offered in packages)
+- **7-Year-Olds Availability** (SFSU):
+    - Saturdays: 11:00 AM – 12:00 PM
+    - Mondays: 2:40 PM – 3:40 PM, 5:15 PM – 6:15 PM
 
-## Payment Methods
+### Special Groups
 
-- Book online at sanfranciscokids.tennis/contact-sf-tennis-kids
+- **Semi-Private (2 students)**: $82.50 per lesson/student
+- **Triad (3 students)**: $65 per lesson/student
+- **Create Your Own Group (4+ kids)**: 15% discount for the organizing family
+
+## Location Details
+
+- **Location**: San Francisco State University (SFSU) Campus
+- **Parking**: Free parking permit provided upon registration
 
 ## Related pages
 

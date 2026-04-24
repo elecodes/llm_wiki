@@ -1,16 +1,20 @@
 import os
 import json
-import google.generativeai as genai
+from pathlib import Path
+from google import genai
 from dotenv import load_dotenv
 
-load_dotenv()
-
-# Configure Gemini
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+# Load .env relative to this file's location (llm wiki/scripts/.env)
+env_path = Path(__file__).parent.parent / ".env"
+load_dotenv(dotenv_path=env_path)
 
 class KnowledgeExtractor:
-    def __init__(self, model_name="gemini-1.5-flash"):
-        self.model = genai.GenerativeModel(model_name)
+    def __init__(self, model_name="gemini-2.5-flash"):
+        api_key = os.getenv("GEMINI_API_KEY")
+        if not api_key:
+            raise ValueError("GEMINI_API_KEY not found in environment or .env file")
+        self.client = genai.Client(api_key=api_key)
+        self.model_id = model_name
         
     def extract_knowledge(self, text):
         """Uses Gemini to extract structured knowledge and redact PII."""
@@ -43,18 +47,26 @@ INSTRUCTIONS:
 Ensure the 'markdown_content' is well-formatted, using headers, bold text, and lists where appropriate.
 """
         try:
-            response = self.model.generate_content(prompt)
-            # Try to find JSON block in response
+            response = self.client.models.generate_content(
+                model=self.model_id,
+                contents=prompt
+            )
+            
             content = response.text
+            
+            # Basic cleanup if model returns markdown blocks
             if "```json" in content:
                 content = content.split("```json")[1].split("```")[0].strip()
             elif "{" in content:
-                # Basic fallback to extract from first { to last }
                 start = content.find("{")
                 end = content.rfind("}") + 1
                 content = content[start:end]
                 
             return json.loads(content)
+        except json.JSONDecodeError as je:
+            print(f"JSON Decode Error: {je}")
+            print(f"Raw content: {content}")
+            return None
         except Exception as e:
             print(f"Error extracting knowledge: {e}")
             return None

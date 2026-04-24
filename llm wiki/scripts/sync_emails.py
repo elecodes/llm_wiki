@@ -29,7 +29,7 @@ def main():
     # Initialize components
     try:
         ingestor = GmailIngestor(credentials_path, token_path)
-        extractor = KnowledgeExtractor(model_name="gemini-1.5-flash")
+        extractor = KnowledgeExtractor(model_name="gemini-2.5-flash")
         exporter = ObsidianExporter(vault_path)
     except Exception as e:
         print(f"❌ Initialization failed: {e}")
@@ -50,7 +50,7 @@ def main():
         print(f"⚠️ Label '{processed_label}' not found. You might want to create it to track history.")
 
     # Fetch messages
-    messages = ingestor.list_messages(label_ids=[target_label_id], max_results=args.limit)
+    messages = ingestor.list_messages(query=f"label:{target_label}", max_results=args.limit)
     
     if not messages:
         print("✅ No new messages to process.")
