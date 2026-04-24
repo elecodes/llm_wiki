@@ -1,0 +1,7 @@
+.env
+token.pickle
+*.pickle
+.venv/
+__pycache__/
+*.pyc
+.DS_Store

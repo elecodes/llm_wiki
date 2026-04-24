@@ -1,0 +1,245 @@
+{
+  "main": {
+    "id": "657eae280306cde1",
+    "type": "split",
+    "children": [
+      {
+        "id": "5746db3f18b21495",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1960f66da5e4224d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/pricing.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "pricing"
+            }
+          }
+        ]
+      },
+      {
+        "id": "400064e1bccda3c0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "82e66f16301e7ff1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "raw/Parent-and-Me-Classes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Parent-and-Me-Classes"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3d626586ea3d2ac3",
+    "type": "split",
+    "children": [
+      {
+        "id": "08f348b379200bcc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5abd7a7a5555d3e3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "77004811b9346d85",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2cd942d0753f8cb8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "768e2d90cd014ab6",
+    "type": "split",
+    "children": [
+      {
+        "id": "9ac2cc91d0f2a2c8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "724fd9d5cf1a2f42",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "raw/Tennis Kids Lessons and Summer Camps San Francisco.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Tennis Kids Lessons and Summer Camps San Francisco"
+            }
+          },
+          {
+            "id": "85efda9008248fd9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "raw/Tennis Kids Lessons and Summer Camps San Francisco.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Tennis Kids Lessons and Summer Camps San Francisco"
+            }
+          },
+          {
+            "id": "497721488cbfb87b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "842384a2db3bef94",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "dedcfe40b25761e9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "raw/Tennis Kids Lessons and Summer Camps San Francisco.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Tennis Kids Lessons and Summer Camps San Francisco"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "82e66f16301e7ff1",
+  "lastOpenFiles": [
+    "README.md",
+    "raw/Re-Parent-and-Me-Classes.md",
+    "raw/Ready-to-Get--on-the-tennis-courts-Join-Ou.md",
+    "raw/Spots-are-Filling-Fast-SF-TENNIS-KIDS-Summer-Camp.md",
+    "wiki/summer-camps.md",
+    "wiki/sf-tennis-kids-club.md",
+    "wiki/ready-toon-the-tennis-courts-join.md",
+    "wiki/re-ready-toon-the-tennis-courts.md",
+    "wiki/re-question-about-14-year-old-beginners.md",
+    "wiki/re-parent-and.md",
+    "wiki/question-about-14-year-old-beginners.md",
+    "wiki/pricing.md",
+    "wiki/Re-question-about-14-year-old-beginners.md",
+    "wiki/Re__question_about_14_year_old_beginners.md",
+    "wiki/Re____Ready_toon_the_tennis_courts.md",
+    "wiki/question_about_14_year_old_beginners.md",
+    "wiki/programs.md",
+    "wiki/Lessons-and.md",
+    "wiki/__Spots_are_SF_TENNIS_KIDS.md",
+    "wiki/Parent_and.md",
+    "wiki/Re__Parent_and.md",
+    "wiki/__Ready_toon_the_tennis_courts__Join_.md",
+    "raw/__Spots_are_SF_TENNIS_KIDS.md",
+    "raw/__Ready_toon_the_tennis_courts__Join_.md",
+    "raw/Re____Ready_toon_the_tennis_courts.md",
+    "raw/Re__Parent_and.md",
+    "scripts/cleanup_pii.py",
+    "scripts/setup_env.sh",
+    "scripts/token.pickle",
+    "scripts/credentials.json",
+    "scripts/sync_emails.py",
+    "scripts/credential_SFTennisKids_Bot.json",
+    "credential_SFTennisKids_Bot.json",
+    "scripts",
+    "untitled folder",
+    "Clippings"
+  ]
+}

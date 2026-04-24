@@ -1,0 +1,24 @@
+# API Credentials & Tokens
+scripts/credentials.json
+scripts/token.json
+scripts/token.pickle
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# OS stuff
+.DS_Store
+Thumbs.db
+
+# Project specific
+raw/
