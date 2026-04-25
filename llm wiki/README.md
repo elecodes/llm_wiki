@@ -8,6 +8,7 @@ This project solves the problem of "hidden knowledge" in email threads. It uses 
 ### Key Features
 - **Automated Extraction**: Parses raw data and synthesizes it into structured Markdown using Gemini 2.5-Flash.
 - **PII Sanitization**: Multi-layer anonymization using Regex patterns and LLM verification.
+- **Consolidated Knowledge**: Active management of redundant data to maintain a single "Source of Truth".
 - **Obsidian Integration**: Generates Wiki-style links and indices for seamless navigation.
 
 ## 🧠 Tech Stack

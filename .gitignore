@@ -1,7 +1,7 @@
 # API Credentials & Tokens
-scripts/credentials.json
-scripts/token.json
-scripts/token.pickle
+**/credentials.json
+**/token.json
+**/token.pickle
 .env
 
 # Python

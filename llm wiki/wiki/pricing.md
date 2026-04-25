@@ -2,7 +2,7 @@
 
 **Summary**: Current pricing, discounts, and availability for tennis programs and summer camps.
 
-**Sources**: [[tennis-kids-lessons-and-summer-camps-san-francisco]], [[question-about-14-year-old-beginners]], [[parent-and-me-classes]], [[sf-tennis-kids-club-spring-season-tennis-lessons-summer-camp]], [[sf-tennis-kids-club-tennis-lessons-for-7-year-olds-at-sfsu-spring-season-other-options]]
+**Sources**: [[tennis-kids-lessons-and-summer-camps-san-francisco]], [[re-parent-and]], [[sf-tennis-kids-club-spring-season-tennis-lessons-summer-camp]], [[sf-tennis-kids-club-tennis-lessons-for-7-year-olds-at-sfsu-spring-season-other-options]]
 
 **Last updated**: 2026-04-24
 

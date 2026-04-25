@@ -1,11 +1,12 @@
-# [REDACTED]: [REDACTED]
+# Teenager Grouping Policy
 
-### [REDACTED] programs are conducted across multiple tennis courts at [[redacted]]]. 
+**Summary**: Information regarding grouping and skill level matching for older beginners (teenagers).
 
-### [REDACTED] [REDACTED] academy utilizes multiple courts to organize players based on two primary criteria:
-*   **[[redacted]]]**: Ensuring competitive and developmental compatibility.
-*   **[[age]]**: Maintaining peer-appropriate social environments.
+**Key Points**:
+- **Effective Grouping**: Lessons and camps are conducted across multiple tennis courts, which allows for grouping players effectively by both **age and skill level**.
+- **Peer Matching**: For older students (e.g., 14-year-olds), the priority is always to keep them in an **age-appropriate group** to avoid placement with significantly younger children.
+- **Weekly Mix**: Groupings ultimately depend on the mix of players registered each week. while exact age parity cannot always be guaranteed, the academy is intentional about creating the best possible fit for every player.
+- **Skill Compatibility**: The multi-court setup ensures that even within an age group, players are matched with others of a similar developmental level.
 
-### [REDACTED]
-*   **[REDACTED]**: Final groupings are determined by the specific [[redacted]]] demographics. While the academy strives for precise matches, exact age parity cannot be guaranteed.
-*   **[REDACTED]**: For older students (e.g., [[teenagers]]), the priority is to maintain [[age-redacted]]] and avoid placement with significantly younger children.
+---
+*Derived from parent inquiries regarding 14-year-old beginners.*

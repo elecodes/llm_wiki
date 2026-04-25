@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/pricing.md",
+                "file": "raw/Spots-are-Filling-Fast-SF-TENNIS-KIDS-Summer-Camp.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "pricing"
+              "title": "Spots-are-Filling-Fast-SF-TENNIS-KIDS-Summer-Camp"
             }
           }
         ]
@@ -33,12 +33,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "raw/Parent-and-Me-Classes.md",
+                "file": "wiki/pricing.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Parent-and-Me-Classes"
+              "title": "pricing"
             }
           }
         ]
@@ -203,43 +203,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "82e66f16301e7ff1",
+  "active": "1960f66da5e4224d",
   "lastOpenFiles": [
-    "README.md",
-    "raw/Re-Parent-and-Me-Classes.md",
+    "docs/adr/003-knowledge-consolidation.md",
     "raw/Ready-to-Get--on-the-tennis-courts-Join-Ou.md",
-    "raw/Spots-are-Filling-Fast-SF-TENNIS-KIDS-Summer-Camp.md",
-    "wiki/summer-camps.md",
-    "wiki/sf-tennis-kids-club.md",
-    "wiki/ready-toon-the-tennis-courts-join.md",
-    "wiki/re-ready-toon-the-tennis-courts.md",
+    "raw/Parent-and-Me-Classes.md",
+    "raw/Re-Parent-and-Me-Classes.md",
+    "raw/Re--Ready-to-Get--on-the-tennis-courts-Join.md",
     "wiki/re-question-about-14-year-old-beginners.md",
-    "wiki/re-parent-and.md",
-    "wiki/question-about-14-year-old-beginners.md",
-    "wiki/pricing.md",
-    "wiki/Re-question-about-14-year-old-beginners.md",
-    "wiki/Re__question_about_14_year_old_beginners.md",
-    "wiki/Re____Ready_toon_the_tennis_courts.md",
-    "wiki/question_about_14_year_old_beginners.md",
     "wiki/programs.md",
-    "wiki/Lessons-and.md",
-    "wiki/__Spots_are_SF_TENNIS_KIDS.md",
-    "wiki/Parent_and.md",
-    "wiki/Re__Parent_and.md",
-    "wiki/__Ready_toon_the_tennis_courts__Join_.md",
-    "raw/__Spots_are_SF_TENNIS_KIDS.md",
-    "raw/__Ready_toon_the_tennis_courts__Join_.md",
-    "raw/Re____Ready_toon_the_tennis_courts.md",
-    "raw/Re__Parent_and.md",
-    "scripts/cleanup_pii.py",
-    "scripts/setup_env.sh",
-    "scripts/token.pickle",
-    "scripts/credentials.json",
-    "scripts/sync_emails.py",
-    "scripts/credential_SFTennisKids_Bot.json",
-    "credential_SFTennisKids_Bot.json",
-    "scripts",
-    "untitled folder",
-    "Clippings"
+    "wiki/pricing.md",
+    "wiki/question-about-14-year-old-beginners.md",
+    "wiki/lessons-and.md",
+    "docs/maintenance.md",
+    "wiki/parent-and.md",
+    "wiki/log.md",
+    "wiki/locations.md",
+    "wiki/summer-camps.md",
+    "wiki/spots-are-sf-tennis-kids.md",
+    "wiki/re-ready-toon-the-tennis-courts.md",
+    "docs/adr/002-project-structure.md",
+    "wiki/question-about-14-year-old-beginners-1.md",
+    "docs/playbook.md",
+    "docs/adr/001-gemini-gmail-extraction.md",
+    "docs/adr",
+    "docs",
+    "wiki_vault/sf-tennis-kids-club-tennis-lessons-for-7-year-olds-at-sfsu-spring-season-other-options.md",
+    "wiki_vault/sf-tennis-kids-club-spring-season-tennis-lessons-summer-camp.md",
+    "scripts/token.json",
+    "wiki_vault/sf-tennis-kids-club-spring-tennis-lessons-2026-summer-camp-at-sfsu.md",
+    "scripts/scratch/sync_output_2.5.txt",
+    "scripts/scratch/full_model_list.txt",
+    "scripts/scratch/sync_output.txt",
+    "wiki_vault",
+    "scripts/scratch/list_models.py",
+    "scripts/scratch",
+    "scripts/llm wiki/wiki",
+    "wiki/re-question-about-14-year-old-beginners-1.md",
+    "README.md"
   ]
 }

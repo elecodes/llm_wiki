@@ -2,7 +2,7 @@
 
 **Summary**: Age-grouped tennis lesson programs from beginner fundamentals to high-performance junior clinics.
 
-**Sources**: [[tennis-kids-lessons-and-summer-camps-san-francisco]], [[parent-and-me-classes]]
+**Sources**: [[tennis-kids-lessons-and-summer-camps-san-francisco]], [[re-parent-and]]
 
 **Last updated**: 2026-04-19
 

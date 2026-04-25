@@ -21,17 +21,12 @@
 ### Locations & Schedule
 - [[locations | Locations]]
 - [[re-ready-toon-the-tennis-courts | Re Ready Toon The Tennis Courts]]
-- [[ready-toon-the-tennis-courts-join | Ready Toon The Tennis Courts Join]]
 - [[spots-are-sf-tennis-kids | Spots Are Sf Tennis Kids]]
 
 ### Customer Inquiries
-- [[question-about-14-year-old-beginners | Question About 14 Year Old Beginners]]
-- [[question-about-14-year-old-beginners-1 | Question About 14 Year Old Beginners 1]]
-- [[re-question-about-14-year-old-beginners | Re Question About 14 Year Old Beginners]]
-- [[re-question-about-14-year-old-beginners-1 | Re Question About 14 Year Old Beginners 1]]
+- [[re-question-about-14-year-old-beginners | Teenager Grouping Policy]]
 
 ### Operations
-- [[parent-and | Parent And]]
 - [[re-parent-and | Re Parent And]]
 
 ### Uncategorized
