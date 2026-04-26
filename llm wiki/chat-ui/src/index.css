@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-main: #0a0c10;
+  --bg-sidebar: #11141b;
+  --accent-primary: #3b82f6;
+  --accent-secondary: #6366f1;
+  --text-main: #e2e8f0;
+  --text-muted: #94a3b8;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --sidebar-width: 300px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1, h2, h3, .font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--glass-border);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Markdown styling */
+.markdown-content h1 { @apply text-2xl font-bold mb-4 text-white; }
+.markdown-content h2 { @apply text-xl font-bold mt-6 mb-3 text-white; }
+.markdown-content h3 { @apply text-lg font-bold mt-4 mb-2 text-white; }
+.markdown-content p { @apply mb-4 leading-relaxed text-gray-300; }
+.markdown-content ul { @apply list-disc list-inside mb-4 space-y-2 text-gray-300; }
+.markdown-content li { @apply ml-4; }
+.markdown-content strong { @apply text-white font-semibold; }
+.markdown-content hr { @apply border-white/5 my-6; }
+.markdown-content code { @apply bg-white/5 px-1.5 py-0.5 rounded text-blue-400 font-mono text-xs; }
