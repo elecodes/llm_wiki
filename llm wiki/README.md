@@ -1,36 +1,47 @@
-# 🎾 Tennis Academy Knowledge Base (LLM Wiki)
+# SF Tennis Kids Club Wiki & Chatbot
 
-An automated, privacy-first knowledge extraction system that transforms raw institutional communications (emails, newsletters) into a structured, searchable, and anonymized knowledge base.
+This project is an LLM-powered knowledge base for the SF Tennis Kids Club. It includes a Python-based RAG (Retrieval-Augmented Generation) backend and a React-based chat interface.
 
-## 🚀 Overview
-This project solves the problem of "hidden knowledge" in email threads. It uses a custom Python pipeline to extract pricing, programs, locations, and operational details from raw email data, ensuring all personal identifiable information (PII) is removed before publication.
+## Project Structure
 
-### Key Features
-- **Automated Extraction**: Parses raw data and synthesizes it into structured Markdown using Gemini 2.5-Flash.
-- **PII Sanitization**: Multi-layer anonymization using Regex patterns and LLM verification.
-- **Consolidated Knowledge**: Active management of redundant data to maintain a single "Source of Truth".
-- **Obsidian Integration**: Generates Wiki-style links and indices for seamless navigation.
+- `wiki/`: Markdown files containing the club's knowledge base.
+- `scripts/`: Python scripts for data processing and the chat server.
+- `chat-ui/`: React + Vite frontend for the chatbot.
 
-## 🧠 Tech Stack
-- **Core**: Python 3.x
-- **LLM**: Google Gemini 2.5-Flash
-- **Storage**: Markdown (Obsidian-ready)
+## Getting Started
 
-## 📂 Project Structure
-```text
-llm wiki/
-├── wiki/            # The generated knowledge base
-├── wiki_vault/      # Raw AI extractions from sources (Gmail, etc.)
-├── scripts/         # Extraction and sanitization logic
-├── docs/            # Project documentation (ADRs, Playbooks)
-├── raw/             # Legacy raw source material
-└── templates/       # Markdown templates for consistency
-```
+### 1. Backend Setup
 
-## 🛠️ Setup & Usage
-1. `pip install -r requirements.txt`
-2. Configure API keys in `.env`.
-3. Run `python scripts/sync_emails.py`.
+The backend uses FastAPI and Google's Gemini API.
 
----
-*Developed as part of the [elecodes](https://github.com/elecodes) portfolio.*
+1. Ensure you have Python 3.12+ installed.
+2. Navigate to the root directory (`llm wiki/`).
+3. Create and activate a virtual environment:
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate
+   pip install -r requirements.txt
+   ```
+4. Create a `scripts/.env` file with your `GEMINI_API_KEY`.
+5. Start the server:
+   ```bash
+   python scripts/chat_server.py
+   ```
+   The API will be available at `http://localhost:8000`.
+
+### 2. Frontend Setup
+
+1. Navigate to `chat-ui/`.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the dev server:
+   ```bash
+   npm run dev
+   ```
+   The UI will be available at `http://localhost:5173` (or `5174` if 5173 is busy).
+
+## Troubleshooting
+
+- **Backend hangs on import**: If the backend process hangs without output when starting, it's likely a corruption in the virtual environment. Delete the `.venv` folder and recreate it as described in the setup steps.
