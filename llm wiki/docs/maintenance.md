@@ -49,6 +49,27 @@ Cuando existen múltiples archivos para el mismo tema (ej: `re-` duplicados o hi
 
 ---
 
+## 🤖 Gestión de Modelos y Cuotas
+
+El sistema utiliza una estrategia de **Fallback** automática para manejar los límites de la capa gratuita de Gemini.
+
+*   **Rotación**: Si un modelo (ej: `gemini-2.0-flash`) devuelve un error 429 (Quota Exceeded), el backend intentará automáticamente con el siguiente en la lista (`2.5-flash`, `flash-lite`, etc.).
+*   **Logs**: Podés ver qué modelo está respondiendo en la consola del backend.
+*   **Configuración**: La lista de modelos está definida en `scripts/lib/query.py`.
+
+---
+
+## 🧠 Absorción de Conocimiento
+
+La funcionalidad "Absorb into Wiki" permite capturar información valiosa del chat y guardarla permanentemente.
+
+1.  **Generación**: Hacé clic en el ícono de "cerebro" en la respuesta del chat.
+2.  **Review**: Se abrirá un modal con el Markdown generado por la IA.
+3.  **Edición**: **SIEMPRE** revisá que no se filtre PII (nombres de alumnos, teléfonos) antes de guardar.
+4.  **Persistencia**: Al confirmar, el archivo se guarda en `wiki/` y se indexa automáticamente.
+
+---
+
 ## 🛠️ Herramientas Útiles
 
 *   **`scripts/sync_emails.py`**: Sincroniza mails nuevos desde Gmail.

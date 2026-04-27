@@ -2,16 +2,33 @@
 @import "tailwindcss";
 
 :root {
-  --bg-main: #0a0c10;
-  --bg-sidebar: #11141b;
-  --accent-primary: #3b82f6;
-  --accent-secondary: #6366f1;
-  --text-main: #e2e8f0;
-  --text-muted: #94a3b8;
-  --glass-bg: rgba(255, 255, 255, 0.03);
-  --glass-border: rgba(255, 255, 255, 0.08);
+  --bg-main: #181a24;
+  --bg-secondary: #23243a;
+  --bg-muted: #1d1e2f;
+  --accent-primary: #3a5ba0;
+  --accent-secondary: #ffe066;
+  --accent-light: #bccdf0;
+  --text-main: #e6eaf3;
+  --text-muted: #7a88a1;
+  --primary-fg: #ffe066;
+  --secondary-fg: #23243a;
+  --glass-bg: rgba(230, 234, 243, 0.03);
+  --glass-border: rgba(230, 234, 243, 0.08);
   --sidebar-width: 300px;
 }
+
+@theme {
+  --color-bg-main: var(--bg-main);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-muted: var(--bg-muted);
+  --color-accent-primary: var(--accent-primary);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-light: var(--accent-light);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --font-outfit: 'Outfit', sans-serif;
+}
+
 
 * {
   margin: 0;
@@ -66,12 +83,17 @@ h1, h2, h3, .font-outfit {
 }
 
 /* Markdown styling */
-.markdown-content h1 { @apply text-2xl font-bold mb-4 text-white; }
-.markdown-content h2 { @apply text-xl font-bold mt-6 mb-3 text-white; }
-.markdown-content h3 { @apply text-lg font-bold mt-4 mb-2 text-white; }
-.markdown-content p { @apply mb-4 leading-relaxed text-gray-300; }
-.markdown-content ul { @apply list-disc list-inside mb-4 space-y-2 text-gray-300; }
-.markdown-content li { @apply ml-4; }
-.markdown-content strong { @apply text-white font-semibold; }
-.markdown-content hr { @apply border-white/5 my-6; }
-.markdown-content code { @apply bg-white/5 px-1.5 py-0.5 rounded text-blue-400 font-mono text-xs; }
+.markdown-content h1 { @apply text-3xl font-bold mb-6 text-white tracking-tight font-outfit; }
+.markdown-content h2 { @apply text-2xl font-bold mt-10 mb-4 text-white tracking-tight font-outfit; }
+.markdown-content h3 { @apply text-xl font-semibold mt-6 mb-3 text-accent-light tracking-wide; }
+.markdown-content p { @apply mb-5 leading-relaxed text-text-main/80 text-[15px]; }
+.markdown-content ul { @apply mb-6 space-y-3; }
+.markdown-content li { @apply text-text-main/80 text-[15px] leading-relaxed; }
+.markdown-content strong { @apply text-white font-bold; }
+.markdown-content hr { @apply border-white/5 my-10; }
+.markdown-content code { @apply bg-white/10 px-2 py-0.5 rounded text-accent-light font-mono text-[13px] border border-white/5; }
+
+/* Custom components for wiki */
+.wiki-card {
+  @apply p-6 rounded-2xl bg-white/5 border border-white/10 shadow-xl transition-all hover:bg-white/10;
+}

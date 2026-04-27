@@ -17,6 +17,21 @@ app.add_middleware(
 )
 
 wiki_path = Path(__file__).parent.parent / "wiki"
+
+# Startup validation
+if not os.getenv("GEMINI_API_KEY"):
+    print("\n[FATAL] GEMINI_API_KEY not found in environment.")
+    print("Please create a .env file in the root directory with: GEMINI_API_KEY=your_key_here")
+    print("Or export it: export GEMINI_API_KEY=your_key_here\n")
+    import sys
+    sys.exit(1)
+
+if not wiki_path.exists() or not wiki_path.is_dir():
+    print(f"\n[FATAL] Wiki directory not found at: {wiki_path}")
+    print("Please ensure the 'wiki/' folder exists in the project root.\n")
+    import sys
+    sys.exit(1)
+
 engine = QueryEngine()
 
 class QueryRequest(BaseModel):
@@ -86,7 +101,7 @@ async def absorb_knowledge(request: QueryRequest):
         Return ONLY the markdown content for the new or updated page.
         """
         
-        response = engine.model.generate_content(prompt)
+        response = engine.generate(prompt)
         # For now, we return the proposal. In a real scenario, we might save it directly.
         return {"proposal": response.text}
     except Exception as e:
@@ -105,12 +120,12 @@ async def save_page(request: dict):
         if not filename.endswith(".md"):
             filename += ".md"
             
-        path = os.path.join(WIKI_DIR, filename)
+        path = wiki_path / filename
         with open(path, "w") as f:
             f.write(content)
             
         # Update index.md if it's a new file
-        index_path = os.path.join(WIKI_DIR, "index.md")
+        index_path = wiki_path / "index.md"
         with open(index_path, "r") as f:
             index_content = f.read()
             

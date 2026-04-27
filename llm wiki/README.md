@@ -2,11 +2,20 @@
 
 This project is an LLM-powered knowledge base for the SF Tennis Kids Club. It includes a Python-based RAG (Retrieval-Augmented Generation) backend and a React-based chat interface.
 
+## ✨ Key Features
+
+- **RAG-Powered Chat**: Intelligent responses grounded in the club's specific knowledge base.
+- **Knowledge Absorption**: Instantly turn chat conversations into structured Wiki pages with a built-in review modal.
+- **Model Fallback System**: Automatic rotation between multiple Gemini models to bypass "Quota Exceeded" errors on the Free Tier.
+- **Premium UI**: Dark-themed, modern interface with glassmorphism, responsive design, and source document highlighting.
+- **Automated PII Cleanup**: Scripts to ensure student and parent privacy by sanitizing personal information.
+
 ## Project Structure
 
 - `wiki/`: Markdown files containing the club's knowledge base.
 - `scripts/`: Python scripts for data processing and the chat server.
 - `chat-ui/`: React + Vite frontend for the chatbot.
+- `docs/adr/`: Architecture Decision Records documenting key technical choices.
 
 ## Getting Started
 
@@ -40,8 +49,10 @@ The backend uses FastAPI and Google's Gemini API.
    ```bash
    npm run dev
    ```
-   The UI will be available at `http://localhost:5173` (or `5174` if 5173 is busy).
+   The UI will be available at `http://localhost:5173`.
 
 ## Troubleshooting
 
-- **Backend hangs on import**: If the backend process hangs without output when starting, it's likely a corruption in the virtual environment. Delete the `.venv` folder and recreate it as described in the setup steps.
+- **429 Quota Errors**: The system automatically attempts to switch models. If it fails, wait 60 seconds for the quota to reset.
+- **Backend hangs on import**: If the backend process hangs when starting, delete the `.venv` folder and recreate it.
+- **Connection Refused**: Ensure the backend server is running on port 8000.
