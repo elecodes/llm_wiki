@@ -87,6 +87,9 @@ h1, h2, h3, .font-outfit {
 .markdown-content h2 { @apply text-2xl font-bold mt-10 mb-4 text-white tracking-tight font-outfit; }
 .markdown-content h3 { @apply text-xl font-semibold mt-6 mb-3 text-accent-light tracking-wide; }
 .markdown-content p { @apply mb-5 leading-relaxed text-text-main/80 text-[15px]; }
+.chat-bubble .markdown-content p:last-child { @apply mb-0; }
+.chat-bubble .markdown-content { @apply px-0; }
+.chat-bubble .markdown-content p { @apply m-0; }
 .markdown-content ul { @apply mb-6 space-y-3; }
 .markdown-content li { @apply text-text-main/80 text-[15px] leading-relaxed; }
 .markdown-content strong { @apply text-white font-bold; }

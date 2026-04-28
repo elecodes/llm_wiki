@@ -51,8 +51,25 @@ The backend uses FastAPI and Google's Gemini API.
    ```
    The UI will be available at `http://localhost:5173`.
 
+### 3. Run Backend + Frontend Together
+
+Use two terminals while developing:
+
+- Terminal A (backend):
+  ```bash
+  cd "llm wiki"
+  source .venv/bin/activate
+  python scripts/chat_server.py
+  ```
+- Terminal B (frontend):
+  ```bash
+  cd "llm wiki/chat-ui"
+  npm run dev
+  ```
+
 ## Troubleshooting
 
 - **429 Quota Errors**: The system automatically attempts to switch models. If it fails, wait 60 seconds for the quota to reset.
 - **Backend hangs on import**: If the backend process hangs when starting, delete the `.venv` folder and recreate it.
-- **Connection Refused**: Ensure the backend server is running on port 8000.
+- **Connection Refused (`:8000/api/query`)**: The frontend is running, but the backend is not listening on port 8000. Start `python scripts/chat_server.py` from the project root with `.venv` activated.
+- **UI changes not visible**: If Vite hot reload misses a visual tweak, do a hard refresh (`Cmd+Shift+R`) in the browser.

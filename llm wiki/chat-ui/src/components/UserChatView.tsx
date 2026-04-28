@@ -85,7 +85,7 @@ function UserChatView() {
   return (
     <div className="flex h-screen bg-bg-main text-text-main font-sans selection:bg-accent-primary/30 overflow-hidden">
       {/* Main Chat Area */}
-      <main className="flex-1 flex flex-col relative overflow-hidden max-w-5xl mx-auto w-full shadow-2xl bg-bg-main/50">
+      <main className="flex-1 flex flex-col relative overflow-hidden max-w-5xl mx-auto w-full shadow-2xl bg-bg-main/50 rounded-2xl">
         {/* Header */}
         <header 
           style={{ paddingLeft: '3rem', paddingRight: '3rem' }}
@@ -103,7 +103,7 @@ function UserChatView() {
         {/* Messages */}
         <div 
           ref={scrollRef}
-          className="flex-1 overflow-y-auto px-8 py-10 space-y-8 scroll-smooth custom-scrollbar"
+          className="flex-1 overflow-y-auto px-8 pt-24 pb-10 space-y-8 scroll-smooth custom-scrollbar"
         >
           {messages.length === 0 ? (
             <div className="h-full flex flex-col items-center justify-center max-w-lg mx-auto text-center space-y-6">
@@ -127,7 +127,10 @@ function UserChatView() {
                   {msg.role === 'user' ? <User className="w-5 h-5 text-text-muted" /> : <Bot className="w-5 h-5 text-primary-fg" />}
                 </div>
                 <div className={`max-w-2xl space-y-3 ${msg.role === 'user' ? 'text-right' : ''}`}>
-                  <div className={`inline-block p-5 rounded-2xl text-sm leading-relaxed ${msg.role === 'user' ? 'bg-accent-primary text-primary-fg shadow-lg shadow-accent-primary/20' : 'bg-bg-secondary border border-white/5'}`}>
+                  <div
+                    style={{ padding: '18px 40px' }}
+                    className={`chat-bubble inline-flex min-h-[68px] items-center rounded-2xl text-sm leading-relaxed ${msg.role === 'user' ? 'bg-accent-primary text-primary-fg shadow-lg shadow-accent-primary/20' : 'bg-bg-secondary border border-white/5'}`}
+                  >
                     <div className="markdown-content">
                       <ReactMarkdown
                         components={{

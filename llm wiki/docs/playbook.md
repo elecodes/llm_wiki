@@ -24,3 +24,13 @@ If the `chat_server.py` hangs during import (specifically when importing `google
 
 ### Frontend Connection Errors
 If you see `ERR_CONNECTION_REFUSED` in the browser console, ensure the FastAPI server is running on port 8000.
+
+### Local Dev Startup Order
+Use two terminals and start backend first:
+1. `cd "llm wiki" && source .venv/bin/activate && python scripts/chat_server.py`
+2. `cd "llm wiki/chat-ui" && npm run dev`
+
+If the frontend shows `:8000/api/query net::ERR_CONNECTION_REFUSED`, backend is down or failed to bind.
+
+### UI Spacing Changes Not Showing
+If chat spacing updates are not visible even after code changes, force a browser hard refresh with `Cmd+Shift+R`.
